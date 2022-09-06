@@ -38,7 +38,7 @@ body{
     margin-top: -140px;
     z-index: 1;
     position: relative;
-    transform: skew(0deg, -8deg);
+    transform: skew(0deg, -7deg);
 }
 
 @keyframes gradient {
@@ -201,12 +201,42 @@ ul .indicator::after{
 
 
 
-.alltextmov{
-    margin: 100px 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+h1.titreprincipale{
+
+    position: relative;
+    z-index: 6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: orange;
+    top: 190px;
+    margin: 0px 40px;
+    width: 1000px;
+
+}
+
+
+
+
+
+.xbip89{
+    margin: 210px 50px;
+    top: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    margin-top: 240px;
 
     display: flex;
     align-items: center;
@@ -214,6 +244,7 @@ ul .indicator::after{
     overflow: hidden;
     position: relative;
     z-index: 5;
+    width: 1000px;
 }
 
 
@@ -223,7 +254,7 @@ ul .indicator::after{
 .container .text{
     position: relative;
     color: #4070F4;
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 600;
 }
 .container .text.first-text{
@@ -247,6 +278,20 @@ ul .indicator::after{
     100%{
         left: 0%;
     }
+}
+
+
+
+
+
+.hautdepagefbg54{
+    display: flex;
+}
+
+
+.rfg89{
+    width : 682.6666667px;
+    height : 518.6666667px;
 }
 
 
