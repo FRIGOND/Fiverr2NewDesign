@@ -1,16 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>fiverrDesign2</title>
+
+    <link rel="stylesheet" type="text/css" href="file.css">
+
+    <title>Home Pages</title>
+
+
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <!-- ===== Boxicons 2.1.1 ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <h1>Test</h1>
 
-    <p>Hello toi t'es un gentil nn?</p>
 
-    <h2>Et mtn ?</h2>
+<section>
+
+<div class="background"></div>
+
+
+    <!-- Nav Bar -->
+    <div class="allnavbar">
+
+        <div class="navbar">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bx-home icon'></i>
+                        <i class='bx bxs-home activeIcon'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-user icon'></i>
+                        <i class='bx bxs-user activeIcon'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-heart icon'></i>
+                        <i class='bx bxs-heart activeIcon'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-folder icon'></i>
+                        <i class='bx bxs-folder activeIcon'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog icon'></i>
+                        <i class='bx bxs-cog activeIcon'></i>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <script>
+
+            const navBar = document.querySelector(".navbar")
+            allLi = document.querySelectorAll("li");
+
+            allLi.forEach((li, index) => {
+                li.addEventListener("click" , e =>{
+                    e.preventDefault(); //preventing from submitting
+                    navBar.querySelector(".active").classList.remove("active");
+                    li.classList.add("active");
+
+                    const indicator = document.querySelector(".indicator");
+                    indicator.style.transform = `translateX(calc(${index * 90}px))`;
+                });
+            });
+
+        </script>
+
+    </div>
+    <!-- End - Nab Bar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Haut De Page -->
+<div class="alltextmov">
+
+
+    <div class="container">
+        <span class="text first-text">Une équipe de </span>
+        <span class="text sec-text">Développeurs</span>
+    </div>
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Développeurs";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Graphistes";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Modélisateurs";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+
+
+</div>
+    <!-- End - Haut De Page -->
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Info -->
+
+        <div class="info">
+
+
+
+
+
+
+            <div class="oneinfo">
+
+                <div class="right">
+                    <p class="infotitle"> Un service vous proposant une multitude d'équipe qui sera modifiée par la suite </p>
+
+                    <div class="barinfo"></div>
+
+                    <p class="text"> Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe pour accepter des paiements, effectuer des virements et gérer leurs activités en ligne. </p>
+                </div>
+
+                <div class="mid">
+                    <p>Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe</p>
+                </div>
+
+                <div class="left">
+                    <img src="img/1.png">
+                </div>
+
+            </div>
+
+
+
+
+            <div class="oneinfo">
+
+                <div class="right">
+                    <img src="img/2.png">
+                </div>
+
+                <div class="mid"><p>Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe</p></div>
+
+                <div class="left">
+                    <p class="infotitle"> Un service vous proposant une multitude d'équipe qui sera modifiée par la suite </p>
+
+                    <div class="barinfo"></div>
+
+                    <p class="text"> Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe pour accepter des paiements, effectuer des virements et gérer leurs activités en ligne. </p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="oneinfo">
+
+                <div class="right">
+                    <p class="infotitle"> Un service vous proposant une multitude d'équipe qui sera modifiée par la suite </p>
+
+                    <div class="barinfo"></div>
+
+                    <p class="text"> Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe pour accepter des paiements, effectuer des virements et gérer leurs activités en ligne. </p>
+                </div>
+
+                <div class="mid"><p>Des millions d'entreprises de toutes tailles, des start-up aux grandes entreprises, utilisent le logiciel et les API de Stripe</p></div>
+
+                <div class="left">
+                    <img src="img/3.png">
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    <!-- End - Info -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3 -->
+
+
+
+    <!-- End - 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bas De Page -->
+
+
+
+    <!-- End - Bas De Page -->
+
+
 
 </body>
 </html>
